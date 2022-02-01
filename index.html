@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="popup none">
+        <div class="popup-content">
+           <div class="popup-text"></div> 
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="row pad-5">
+                <div class="header-logo">LOGO</div>
+                <div class="header-account">
+                    <img src="img/Group.svg" alt="account icon">
+                    <img src="img/favorite.svg" alt="favourite icon">
+                    <img src="img/bag.svg" alt="cart icon">
+                    <img src="img/Group_1.svg" class="none" id="menu-icon" alt="menu icon">
+                </div>
+                
+            </div>
+        </div>
+        <div class="header-menu none">
+            <div class="close-menu"></div>
+            <div class="menu-title">
+                <div class="menu-title-item"><a href="#">Постельное белье</a></div>
+                <div class="menu-title-item"><a href="#">Одежда для дома</a></div>
+                <div class="menu-title-item"><a href="#">Одежда для улицы</a></div>
+                <div class="menu-title-item"><a href="#">Выход</a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="content-photo">
+                        <img class="content-photo-full" src="img/14896420-2 1.jpg" alt="pajamas' photo_1">
+                        <img class="content-photo-full none" src="img/14896420-1 1.png" alt="pajamas' photo_2">
+                        <img class="content-photo-full none" src="img/14896420-3 1.png" alt="pajamas' photo_3">
+                        <img class="content-photo-full none" src="img/14896420-4 1.png" alt="pajamas' photo_4">
+                        <img class="content-photo-full none" src="img/14896420-5 1.png" alt="pajamas' photo_5">
+                        <div class="content-photo-min">
+                            <img class="content-photo-min-item" src="img/14896420-2 1.jpg" alt="">
+                            <img class="content-photo-min-item" src="img/14896420-1 1.png" alt="">
+                            <img class="content-photo-min-item" src="img/14896420-3 1.png" alt="">
+                            <img class="content-photo-min-item" src="img/14896420-4 1.png" alt="">
+                            <img class="content-photo-min-item" src="img/14896420-5 1.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="content-info">
+                        <h2 class="content-info-head">Пижама для девочек</h2>
+                        <p class="content-info-article">Арт. 02765/46</p>
+                        <div class="content-info-comments">
+                            <p class="comments-text">Отзывы</p>
+                            <div class="comments-icon-container">
+                                <img class="comments-icon" src="img/icon_star_fill.svg" alt="">
+                                <img class="comments-icon" src="img/icon_star_fill.svg" alt="">
+                                <img class="comments-icon" src="img/icon_star_fill.svg" alt="">
+                                <img class="comments-icon" src="img/icon_star_fill.svg" alt="">
+                                <img class="comments-icon" src="img/icon_star_fill_1.svg" alt="">
+                            </div>
+                            <p class="comments-text">14 отзывов</p>
+                            <a href="#"><img class ="arrow" src="img/Line 15.svg" alt=""></a>                        
+                        </div>
+                        <div class="content-info-price">
+                            <div class="price-container">
+                                <p class="price-new">800 ₽</p>
+                                <p class="price-old">1 500 <span class="rub">&#8381;</span></p>
+                                <a href="#"><img class ="arrow" src="img/Line 15.svg" alt=""></a>
+                            </div>
+                            <div class="sale-container">
+                                <div class="sale-content">скидка -36%</div>
+                                <div class="sale-content">акция -20%</div>
+                            </div>
+                        </div>
+                        <div class="content-info-size">
+                            <div class="size-choice">
+                                <p class="size-choice-text">Выбрать размер</p>
+                                <div class="size-choice-empty none"></div>
+                            </div>
+                            <a class="content-link" href="#">Определить размер</a>
+                        </div>
+                        <div class="content-info-buy">
+                            <div class="row">
+                                <div class="counter-wrapper">
+                                    <div class="items">
+                                        <div class="items-control" data-action="minus">-</div>
+                                        <div class="items-current" data-counter>1</div>
+                                        <div class="items-control" data-action="plus">+</div>
+                                    </div>
+                                </div>
+                                    
+                                <div class="btn-wrapper">
+                                    <div class="cart">Добавить в корзину</div>
+                                    <div class="favourites">
+                                        <svg id="favourites" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="#fff"/>
+                                            <path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="#fff"/>
+                                            <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="#fff"/>
+                                        </svg>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="content-link">Купить в 1 клик</a>  
+                            </div>
+                            <div class="line"></div>
+                            <div class="content-info-details">
+                                <div class="details">
+                                    <img src="img/Closes.svg" alt=""><a href="#" class="content-link">Описание товара</a>
+                                </div>
+                                <div class="details">
+                                    <img src="img/clock.svg" alt=""><a href="#" class="content-link">Доставка и возврат</a>
+                                </div>
+                                <div class="details">
+                                    <img src="img/pay.svg" alt=""><a href="#" class="content-link">Способы оплаты</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="link-wrapper">
+                    <a href="#" class="content-link">Посмотреть все стили</a>
+                </div>
+                <div class="gallery-container">
+                    <div class="photo-wrapper-large">
+                        <img src="img/12296786-1 1.jpg" alt="photo_1">
+                    </div>
+                    <div class="photo-wrapper">
+                        <div class="photo-wrapper-small">
+                            <img src="img/13986707-1 1.jpg" alt="photo_2">
+                            <div class="photo-wrapper-hover none">
+                                <div class="photo-wrapper-cover"></div>
+                                <div class="cover-content-wpapper">
+                                    <div class="svg-wrapper">
+                                        <img src="img/Group 14.svg" alt="">
+                                    </div>
+                                    <p class="text-cover">Узнай, что на мне</p> 
+                                </div>  
+                                <div class="likes">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="#fff"/>
+                                        <path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="#fff"/>
+                                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="#fff"/>
+                                    </svg>
+                                    <p>200</p>
+                                </div>
+                                <div class="full"></div>
+                            </div>
+                        </div>
+                        <div class="photo-wrapper-small">
+                            <img src="img/13986707-1 2.jpg" alt="photo_3">
+                            <div class="photo-wrapper-hover none">
+                                <div class="photo-wrapper-cover"></div>
+                                <div class="cover-content-wpapper">
+                                    <div class="svg-wrapper">
+                                        <img src="img/Group 14.svg" alt="">
+                                    </div>
+                                    <p class="text-cover">Узнай, что на мне</p> 
+                                </div>  
+                                <div class="likes">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="#fff"/>
+                                        <path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="#fff"/>
+                                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="#fff"/>
+                                    </svg>
+                                    <p>200</p>
+                                </div>
+                                <div class="full"></div>
+                            </div>
+                        </div>
+                        <div class="photo-wrapper-small">
+                            <img src="img/8395943-1 1.jpg" alt="photo_4">
+                            <div class="photo-wrapper-hover none">
+                                <div class="photo-wrapper-cover"></div>
+                                <div class="cover-content-wpapper">
+                                    <div class="svg-wrapper">
+                                        <img src="img/Group 14.svg" alt="">
+                                    </div>
+                                    <p class="text-cover">Узнай, что на мне</p> 
+                                </div>  
+                                <div class="likes">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="#fff"/>
+                                        <path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="#fff"/>
+                                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="#fff"/>
+                                    </svg>
+                                    <p>200</p>
+                                </div>
+                                <div class="full"></div>
+                            </div>
+                        </div>
+                        <div class="photo-wrapper-small">
+                            <img src="img/14896421-1 1.jpg" alt="">
+                            <div class="photo-wrapper-hover none">
+                                <div class="photo-wrapper-cover"></div>
+                                <div class="cover-content-wpapper">
+                                    <div class="svg-wrapper">
+                                        <img src="img/Group 14.svg" alt="">
+                                    </div>
+                                    <p class="text-cover">Узнай, что на мне</p> 
+                                </div>  
+                                <div class="likes">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="#fff"/>
+                                        <path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="#fff"/>
+                                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="#fff"/>
+                                    </svg>
+                                    <p>200</p>
+                                </div>
+                                <div class="full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="company-info">
+                <div class="company-info-nav">
+                    <div class="column">
+                        <h3 class="info-title">Покупателям</h3>
+                        <ul class="info-list">
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Бренды</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 class="info-title">О нас</h3>
+                        <ul class="info-list">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Команда</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <h3 class="info-title">Узнайте первыми о новинках и акциях</h3>
+                    <form action="#">
+                        <label for="sub-email" class="sr-only">Адрес электронной почты</label>
+                        <div class="close"></div>
+                        <input ib="sub-email" class="subscribe-email" type="text" placeholder="Адрес электронной почты">
+                    </form>
+                    <div class="error none">Вы ввели некорректный email!</div>
+                    <button class="subscribe-button" type="submit">Подписаться</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
